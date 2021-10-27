@@ -40,11 +40,16 @@ function apagar() {
 const btnApagar = document.getElementById('apaga-tudo');
 btnApagar.addEventListener('click', apagar);
 
-const btnRemoverConcluido = document.querySelector('#remover-finalizados');
-btnRemoverConcluido.addEventListener('click', removerConcluidos);
 function removerConcluidos() {
   const riscados = document.querySelectorAll('.completed');
-  for (index = 0; index < riscados.length; index += 1) {
+  for (let index = 0; index < riscados.length; index += 1) {
     riscados[index].remove();
   }
 }
+const btnRemoverConcluido = document.querySelector('#remover-finalizados');
+btnRemoverConcluido.addEventListener('click', removerConcluidos);
+
+function salvarTarefas() {}
+const btnSalvarTarefas = document.querySelector('#salvar-tarefas');
+btnSalvarTarefas.addEventListener('click', salvarTarefas);
+window.onload = () => {};
